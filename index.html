@@ -1,1 +1,167 @@
-Hi there
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timbre — Voice-to-text and text-to-speech, everywhere</title>
+    <meta name="description" content="A lightweight, native macOS app for system-wide voice-to-text and text-to-speech. ~30MB of memory. No bloat. Just works.">
+    <meta property="og:title" content="Timbre — Voice-to-text and text-to-speech, everywhere">
+    <meta property="og:description" content="A lightweight, native macOS app for system-wide voice-to-text and text-to-speech. ~30MB of memory. No bloat.">
+    <meta property="og:image" content="https://timbre.weisssolutions.org/app-icon.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Timbre">
+    <meta name="twitter:description" content="Voice-to-text and text-to-speech, everywhere. A lightweight, native macOS app.">
+    <meta name="twitter:image" content="https://timbre.weisssolutions.org/app-icon.png">
+    <link rel="icon" href="app-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:opsz,wght@14..32,400..600&display=swap" rel="stylesheet">
+    <style>html { background: #FAF5ED; }</style>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --color-gold: #C4962E;
+            --color-walnut: #2B1F14;
+            --color-walnut-secondary: #5E4A33;
+            --color-walnut-tertiary: #7A634F;
+            --color-surface: #FAF5ED;
+            --color-surface-raised: #FFFCF7;
+            --font-sans: "Inter", sans-serif;
+            --font-display: "DM Serif Display", serif;
+        }
+
+        body {
+            font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+        }
+    </style>
+</head>
+<body class="bg-surface text-walnut antialiased">
+    <main class="isolate">
+
+        <!-- Hero -->
+        <section class="relative overflow-hidden pt-20 pb-24 sm:pt-32 sm:pb-36">
+            <div class="pointer-events-none absolute inset-0 flex items-center justify-center" aria-hidden="true">
+                <div class="size-[800px] rounded-full border border-walnut/3"></div>
+                <div class="absolute size-[600px] rounded-full border border-walnut/3"></div>
+                <div class="absolute size-[400px] rounded-full border border-walnut/3"></div>
+                <div class="absolute size-[200px] rounded-full border border-walnut/4"></div>
+            </div>
+
+            <div class="relative mx-auto max-w-4xl px-6 text-center">
+                <img src="app-icon.png" alt="Timbre app icon" class="mx-auto size-28 drop-shadow-xl sm:size-32">
+                <h1 class="mt-8 font-display text-5xl tracking-tight text-balance sm:text-6xl">Timbre</h1>
+                <p class="mx-auto mt-4 max-w-[48ch] text-lg text-walnut-secondary text-pretty sm:text-xl">Voice-to-text and text-to-speech, everywhere.</p>
+                <div class="mt-10" id="hero-cta"></div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="py-20 sm:py-28">
+            <div class="mx-auto max-w-4xl px-6">
+                <h2 class="max-w-[40ch] font-display text-3xl tracking-tight text-balance sm:text-4xl">Why Timbre.</h2>
+
+                <dl class="mt-12 grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2">
+                    <div>
+                        <dt class="text-base font-medium">Feather-light</dt>
+                        <dd class="mt-2 text-base text-walnut-secondary text-pretty">Timbre uses about 30MB of memory. Most dictation apps use ten times that. Your battery will thank you.</dd>
+                    </div>
+                    <div>
+                        <dt class="text-base font-medium">Truly native</dt>
+                        <dd class="mt-2 text-base text-walnut-secondary text-pretty">Built from the ground up with Swift and SwiftUI. Timbre feels like part of your Mac because it is.</dd>
+                    </div>
+                    <div>
+                        <dt class="text-base font-medium">Beautifully simple</dt>
+                        <dd class="mt-2 text-base text-walnut-secondary text-pretty">Voice-to-text and text-to-speech. No bloated dashboards, no enterprise upsells. Just the basics, done right.</dd>
+                    </div>
+                    <div>
+                        <dt class="text-base font-medium">Works in any app</dt>
+                        <dd class="mt-2 text-base text-walnut-secondary text-pretty">Lives in your menu bar. Press a keyboard shortcut, start talking, and your words appear right where you're typing.</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- Pricing -->
+        <section class="py-20 sm:py-28">
+            <div class="mx-auto max-w-4xl px-6">
+                <h2 class="max-w-[40ch] font-display text-3xl tracking-tight text-balance sm:text-4xl">Pricing.</h2>
+                <p class="mt-4 max-w-[48ch] text-lg text-walnut-secondary text-pretty">Start for free. Go unlimited for $5 a month.</p>
+
+                <div class="mt-12 grid max-w-2xl grid-cols-1 gap-8 sm:grid-cols-2">
+                    <div class="flex flex-col justify-between rounded-2xl bg-surface-raised p-8 shadow-sm ring-1 ring-walnut/8">
+                        <div>
+                            <h3 class="text-lg font-medium">Free</h3>
+                            <p class="mt-4 flex items-baseline gap-1">
+                                <span class="font-display text-4xl tracking-tight tabular-nums">$0</span>
+                                <span class="text-sm text-walnut-tertiary">/ month</span>
+                            </p>
+                            <ul role="list" class="mt-8 space-y-3 text-sm text-walnut-secondary">
+                                <li class="flex items-start gap-3">
+                                    <svg class="mt-0.5 size-4 shrink-0 text-gold" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd"/></svg>
+                                    Up to 5 hours of speech-to-text
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <svg class="mt-0.5 size-4 shrink-0 text-gold" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd"/></svg>
+                                    Up to 40,000 characters of text-to-speech
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col justify-between rounded-2xl bg-surface-raised p-8 shadow-sm ring-1 ring-walnut/8">
+                        <div>
+                            <h3 class="text-lg font-medium">Unlimited</h3>
+                            <p class="mt-4 flex items-baseline gap-1">
+                                <span class="font-display text-4xl tracking-tight tabular-nums">$5</span>
+                                <span class="text-sm text-walnut-tertiary">/ month</span>
+                            </p>
+                            <ul role="list" class="mt-8 space-y-3 text-sm text-walnut-secondary">
+                                <li class="flex items-start gap-3">
+                                    <svg class="mt-0.5 size-4 shrink-0 text-gold" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd"/></svg>
+                                    Unlimited speech-to-text
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <svg class="mt-0.5 size-4 shrink-0 text-gold" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd"/></svg>
+                                    Unlimited text-to-speech
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bottom CTA -->
+        <section class="py-16 sm:py-24">
+            <div class="mx-auto max-w-4xl px-6 text-center">
+                <h2 class="mx-auto max-w-[30ch] font-display text-3xl tracking-tight text-balance sm:text-4xl">Try Timbre today.</h2>
+                <div class="mt-8" id="bottom-cta"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="pb-8">
+        <div class="mx-auto max-w-4xl px-6">
+            <p class="text-center text-sm text-walnut-tertiary">&copy; 2026 Timbre</p>
+        </div>
+    </footer>
+
+    <script>
+        var isMac = /Macintosh|Mac OS X/.test(navigator.userAgent);
+        var downloadUrl = 'https://github.com/mikaelweiss/timbre-releases/releases/latest';
+        var heroCtaEl = document.getElementById('hero-cta');
+        var bottomCtaEl = document.getElementById('bottom-cta');
+        var icon = '<svg class="size-5" viewBox="0 0 20 20" fill="currentColor"><path d="M10.75 2.75a.75.75 0 0 0-1.5 0v8.614L6.295 8.235a.75.75 0 1 0-1.09 1.03l4.25 4.5a.75.75 0 0 0 1.09 0l4.25-4.5a.75.75 0 0 0-1.09-1.03l-2.955 3.129V2.75Z"/><path d="M3.5 12.75a.75.75 0 0 0-1.5 0v2.5A2.75 2.75 0 0 0 4.75 18h10.5A2.75 2.75 0 0 0 18 15.25v-2.5a.75.75 0 0 0-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5Z"/></svg>';
+
+        if (isMac) {
+            heroCtaEl.innerHTML = '<a href="' + downloadUrl + '" class="inline-flex items-center gap-2 rounded-xl bg-linear-to-b from-gold to-gold/85 pl-5 pr-6 py-3 text-base font-medium text-white shadow-lg shadow-gold/20 transition hover:shadow-xl hover:shadow-gold/25 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold">' + icon + ' Download for macOS</a>';
+            bottomCtaEl.innerHTML = '<a href="' + downloadUrl + '" class="inline-flex items-center gap-2 rounded-xl pl-5 pr-6 py-3 text-base font-medium ring-1 ring-walnut/15 transition hover:bg-walnut/5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold">' + icon + ' Download for macOS</a>';
+        } else {
+            heroCtaEl.innerHTML = '<p class="text-base text-walnut-tertiary">Currently available for macOS.</p>';
+            bottomCtaEl.innerHTML = '<p class="text-base text-walnut-tertiary">Currently available for macOS.</p>';
+        }
+    </script>
+</body>
+</html>

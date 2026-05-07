@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Timbre</title>
+    <meta name="description" content="Privacy Policy for Timbre, a macOS voice-to-text and text-to-speech app.">
+    <link rel="icon" href="app-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:opsz,wght@14..32,400..600&display=swap" rel="stylesheet">
+    <style>html { background: #FAF5ED; }</style>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --color-gold: #C4962E;
+            --color-walnut: #2B1F14;
+            --color-walnut-secondary: #5E4A33;
+            --color-walnut-tertiary: #7A634F;
+            --color-surface: #FAF5ED;
+            --color-surface-raised: #FFFCF7;
+            --font-sans: "Inter", sans-serif;
+            --font-display: "DM Serif Display", serif;
+        }
+
+        body {
+            font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+        }
+    </style>
+</head>
+<body class="bg-surface text-walnut antialiased">
+    <main class="mx-auto max-w-3xl px-6 py-16 sm:py-24">
+        <a href="/" class="inline-flex items-center gap-2 text-sm text-walnut-tertiary hover:text-walnut transition mb-12">
+            <svg class="size-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M17 10a.75.75 0 0 1-.75.75H5.612l4.158 3.96a.75.75 0 1 1-1.04 1.08l-5.5-5.25a.75.75 0 0 1 0-1.08l5.5-5.25a.75.75 0 1 1 1.04 1.08L5.612 9.25H16.25A.75.75 0 0 1 17 10Z" clip-rule="evenodd"/></svg>
+            Back to Timbre
+        </a>
+
+        <h1 class="font-display text-4xl tracking-tight sm:text-5xl">Privacy Policy</h1>
+        <p class="mt-4 text-walnut-tertiary">Last updated: May 7, 2026</p>
+
+        <div class="mt-12 space-y-10 text-base leading-7 text-walnut-secondary">
+
+            <section>
+                <h2 class="font-display text-2xl text-walnut">Overview</h2>
+                <p class="mt-3">Timbre is a macOS application for voice-to-text and text-to-speech. This privacy policy explains what data we collect, why we collect it, how we use it, and your rights regarding that data.</p>
+                <p class="mt-3">Timbre is operated by Weiss Solutions LLC ("we", "us", "our").</p>
+            </section>
+
+            <section>
+                <h2 class="font-display text-2xl text-walnut">Data We Collect</h2>
+
+                <h3 class="mt-4 font-medium text-walnut">Email Address</h3>
+                <p class="mt-2">We collect your email address when you create an account. It is used solely for authentication (sending sign-in codes) and to identify your account.</p>
+
+                <h3 class="mt-4 font-medium text-walnut">Audio Data</h3>
+                <p class="mt-2">When you use speech-to-text, your microphone audio is sent through our proxy server to a third-party transcription provider for processing. We do not store your audio on our servers. Audio recordings and transcription history are stored locally on your Mac in the app's Application Support directory and are never uploaded to us.</p>
+
+                <h3 class="mt-4 font-medium text-walnut">Text Data</h3>
+                <p class="mt-2">When you use text-to-speech, the text you submit is sent through our proxy server to a third-party speech synthesis provider. We do not store the text content on our servers beyond the duration of the request.</p>
+
+                <h3 class="mt-4 font-medium text-walnut">Usage Data</h3>
+                <p class="mt-2">We track aggregate usage metrics per account per monthly period, specifically: speech-to-text duration and text-to-speech character counts. This is used to enforce usage limits. We do not track the content of your requests.</p>
+
+                <h3 class="mt-4 font-medium text-walnut">Local Data</h3>
+                <p class="mt-2">Timbre stores the following data locally on your Mac:</p>
+                <ul class="mt-2 list-disc pl-6 space-y-1">
+                    <li>Your keyboard shortcut preferences</li>
+                    <li>Your selected voice and settings</li>
+                    <li>Transcription and speech history (text and audio files)</li>
+                    <li>Your session token (stored in the macOS Keychain)</li>
+                </ul>
+                <p class="mt-2">This data never leaves your device unless you initiate a speech-to-text or text-to-speech request.</p>
+            </section>
+
+            <section>
+                <h2 class="font-display text-2xl text-walnut">Third-Party Services</h2>
+                <p class="mt-3">Timbre relies on the following third-party services to function:</p>
+                <ul class="mt-3 list-disc pl-6 space-y-2">
+                    <li><strong>xAI</strong> &mdash; Provides speech-to-text transcription and text-to-speech synthesis. Audio and text data are sent to xAI's API through our proxy server. Their privacy policy is available at <a href="https://x.ai/legal/privacy-policy" class="text-gold underline underline-offset-2">x.ai/legal/privacy-policy</a>.</li>
+                    <li><strong>Resend</strong> &mdash; Sends sign-in code emails on our behalf. Your email address is shared with Resend for this purpose only.</li>
+                    <li><strong>Cloudflare</strong> &mdash; Our backend runs on Cloudflare Workers with D1 database and KV storage. Account data (email, user ID, usage metrics) is stored in Cloudflare's infrastructure.</li>
+                    <li><strong>Sparkle</strong> &mdash; Used for automatic update checks. Sparkle may send your macOS version and app version to check for updates. No personal data is transmitted.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="font-display text-2xl text-walnut">How We Use Your Data</h2>
+                <ul class="mt-3 list-disc pl-6 space-y-1">
+                    <li>To authenticate your account via email-based one-time codes</li>
+                    <li>To provide speech-to-text and text-to-speech functionality</li>
+                    <li>To send you transactional emails (sign-in codes only)</li>
+                    <li>To enforce usage limits</li>
+                </ul>
+                <p class="mt-3">We do not use your data for advertising, analytics, profiling, or any purpose beyond providing the Timbre service.</p>
+            </section>
+
+            <section>
+                <h2 class="font-display text-2xl text-walnut">Data Retention</h2>
+                <ul class="mt-3 list-disc pl-6 space-y-1">
+                    <li><strong>Account data</strong> (email, user ID) is retained as long as your account exists.</li>
+                    <li><strong>Usage data</strong> is retained on a per-month basis for billing enforcement.</li>
+                    <li><strong>OTP codes</strong> are automatically deleted after verification or expiration (10 minutes).</li>
+                    <li><strong>Local history</strong> (audio files, transcriptions) is stored on your device and can be deleted at any time from within the app.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="font-display text-2xl text-walnut">Data Security</h2>
+                <p class="mt-3">We take reasonable measures to protect your data:</p>
+                <ul class="mt-3 list-disc pl-6 space-y-1">
+                    <li>All communication between the app and our servers uses HTTPS/TLS encryption</li>
+                    <li>Session tokens are signed JWTs with 30-day expiration</li>
+                    <li>OTP codes are hashed (SHA-256) before storage and rate-limited</li>
+                    <li>Your session token is stored in the macOS Keychain</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="font-display text-2xl text-walnut">Your Rights</h2>
+                <p class="mt-3">Depending on your jurisdiction, you may have the following rights:</p>
+                <ul class="mt-3 list-disc pl-6 space-y-1">
+                    <li><strong>Access</strong> &mdash; Request a copy of the personal data we hold about you</li>
+                    <li><strong>Deletion</strong> &mdash; Request that we delete your account and associated data</li>
+                    <li><strong>Correction</strong> &mdash; Request correction of inaccurate personal data</li>
+                    <li><strong>Portability</strong> &mdash; Request your data in a portable format</li>
+                    <li><strong>Opt-out</strong> &mdash; We do not sell your personal data. There is nothing to opt out of.</li>
+                </ul>
+                <p class="mt-3">To exercise any of these rights, contact us at the email below.</p>
+            </section>
+
+            <section>
+                <h2 class="font-display text-2xl text-walnut">Children's Privacy</h2>
+                <p class="mt-3">Timbre is not directed at children under 13. We do not knowingly collect personal data from children under 13. If you believe a child has provided us with personal data, please contact us and we will delete it.</p>
+            </section>
+
+            <section>
+                <h2 class="font-display text-2xl text-walnut">Changes to This Policy</h2>
+                <p class="mt-3">We may update this privacy policy from time to time by updating this page. Continued use of Timbre after changes constitutes acceptance of the updated policy.</p>
+            </section>
+
+            <section>
+                <h2 class="font-display text-2xl text-walnut">Contact</h2>
+                <p class="mt-3">If you have questions about this privacy policy or your data, contact us at:</p>
+                <p class="mt-2"><a href="mailto:support@weisssolutions.org" class="text-gold underline underline-offset-2">support@weisssolutions.org</a></p>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="pb-8">
+        <div class="mx-auto max-w-3xl px-6">
+            <p class="text-center text-sm text-walnut-tertiary">&copy; 2026 Timbre</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -205,5 +205,15 @@
         sparkle:edSignature="pDYoa1ufccuofQ/G3uOnZCNsqkFF2qlPOVRJZWchxmrw4Q3rAS+c16BG17j1q5SxCe2A3U+m6jChG2RGNFHYAQ==" length="2891075"
         type="application/octet-stream"/>
     </item>
+        <item>
+      <title>Version 0.4.5</title>
+      <pubDate>Wed, 13 May 2026 14:38:42 +0000</pubDate>
+      <sparkle:version>19</sparkle:version>
+      <sparkle:shortVersionString>0.4.5</sparkle:shortVersionString>
+      <enclosure
+        url="https://github.com/mikaelweiss/timbre-releases/releases/download/v0.4.5/Timbre.dmg"
+        sparkle:edSignature="50Kcac80sebjHC8WJNAmmjSeg0qzpEgQtHGCW0vvb7XEM9Pz40sn/DNI50w0RPhwGQbgIV0pg4vJOrz6VijFCQ==" length="2891149"
+        type="application/octet-stream"/>
+    </item>
     </channel>
 </rss>
